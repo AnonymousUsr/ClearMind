@@ -1,3 +1,10 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,7 +16,11 @@ ul {
     width: 100%;
     left: 0;
     z-index: 1;
+    font-size: 20px;
+    font-family:Verdana, Tahoma, sans-serif;
+    text-decoration: none;
 }
+
 
 li {
     float: left;
@@ -19,8 +30,8 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 22px 20px;
-    text-decoration: none;
+    padding: 24px 40px;
+    text-decoration:none;
 }
 
 li a:hover {
@@ -32,25 +43,23 @@ li a:hover {
 }
 
 
-.titlediv {
+.parallaxdiv {
+    background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 900px;
     margin-top: 60px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
 }
 
 h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    text-align: center;
+    padding-top: 20%;
     color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 70px;
 }
 
-img {
-    width: 100%;
-    
-}
 
 footer {
     color: white;
