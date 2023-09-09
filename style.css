@@ -8,7 +8,7 @@ body, html{
 #navbar {
     list-style-type: none;
     margin: 0;
-    padding: 5px 20px; /*navbar itself*/
+    padding: 10px 20px; /*navbar itself*/
     overflow: hidden;
     background-color: #402617;
     position: fixed;
@@ -25,7 +25,7 @@ body, html{
     display: block;
     color: white;
     text-align: center;
-    padding: 26px 28px; /*height, width of the navbar buttons*/
+    padding: 28px 28px; /*height, width of the navbar buttons*/
     text-decoration:none;
 }
 #navbar #logo {
@@ -35,10 +35,12 @@ body, html{
     float:left; 
     color:white; 
     padding-left:30px;
+    font-weight: bold;
 }
 #navbar-right {
     float: right; /*puts nav items on right side*/
     font-size: 18px;
+    padding-right: 30px;
 }
 li {
     float: left; /*orders nav items left to right*/
