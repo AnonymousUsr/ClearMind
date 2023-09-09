@@ -10,7 +10,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #402617;
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,12 +30,12 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 24px 40px;
+    padding: 26px 40px;
     text-decoration:none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #865d40;
 }
 
 .container {
@@ -44,7 +44,7 @@ li a:hover {
 
 
 .parallaxdiv {
-    background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg');
+    background-image: url('https://media.istockphoto.com/id/1428737062/photo/empty-wooden-table-top-with-lights-bokeh-on-blur-restaurant-background.webp?b=1&s=170667a&w=0&k=20&c=bmQyPVwhLAB_FN9glJrREyPxzmIQPv5TOFcqcXHy2pw=');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -63,6 +63,6 @@ h1 {
 
 footer {
     color: white;
-    background-color: #333;
+    background-color: #402617;
     padding: 5px;
 }
