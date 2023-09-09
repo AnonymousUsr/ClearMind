@@ -17,11 +17,55 @@
             </div>
         </ul>
 
-        <div class="container">
-            <h2>Header</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container" style="flex-direction: column;">
+            <h2 style="margin-top: 5%; flex-direction: column;">Header</h2>
+            <form style="flex-direction: column;">
+                <p>Add your veggies:</p>
+                <p>
+                <input type="checkbox" name="veggies" id="veg1" value="tomato">
+                <label for="veg1">Tomato</label>
+                </p>
+                <p>
+                <input form="myForm" type="checkbox" name="veggies" id="veg2"  value="onion"> 
+                <label for="veg2">Onion</label>
+                </p>
+                <p>
+                <input form="myForm" type="checkbox" name="veggies" id="veg3"  value="lettuce"> 
+                <label for="veg3">Lettuce</label>
+                </p>
+                <p>
+                <input type="checkbox" name="veggies" id="veg4" value="capsicum"> 
+                <label for="veg4">Capsicum</label>
+                </p>
+                </form>
+                
+                <p><input type="submit" value="Submit" onclick="return ValidateSelection();"></p>
+                    
+                <script type="text/javascript">  
+                   function ValidateSelection()  
+                   {  
+                       var check_box = document.getElementsByName("veggies");  
+                       var CheckedItems = 0; 
+                       for(var i = 0; i < check_box.length; i++)  
+                       {  
+                           if(check_box[i].checked)  
+                               CheckedItems++;  
+                       }  
+                       if (CheckedItems > 3){  
+                           alert("You did it! Heres to happier days ahead.");  
+                           return false;
+                       } 
+                       else if (CheckedItems > 0) {
+                            alert("Any progress is good progess :)");  
+                           return false;
+                       }  
+                       else if (CheckedItems == 0) {
+                            alert("Some days we just don't feel our best. And that's okay.");  
+                           return false;
+                       }
+                   }  
+                </script>
+                
         </div>
 
 
