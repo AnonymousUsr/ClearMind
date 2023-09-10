@@ -26,7 +26,7 @@ body, html{
     color: white;
     text-align: center;
     padding: 28px 28px; /*height, width of the navbar buttons*/
-    text-decoration:none;
+    text-decoration: none;
 }
 #navbar #logo {
     font-size: 20px;
@@ -42,13 +42,30 @@ body, html{
     font-size: 18px;
     padding-right: 30px;
 }
-li {
-    float: left; /*orders nav items left to right*/
-}
-li a:hover {
+#navbar-right a:hover, #sidenav-down a:hover {
     background-color: #865d40;
 }
 
+
+#sidenav {
+    list-style-type: none;
+    height: 100%;
+    width: 15%;
+    background-color: #402617;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#sidenav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 24px;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+}
 
 
 .parallaxdiv {
@@ -85,6 +102,35 @@ footer {
     color: white;
     background-color: #402617;
     padding: 5px;
+}
+
+
+.checklist-body {
+    background-image: url("images/wood.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.menu {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#menu-text {
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    padding: 10px;
+}
+#menuimg {
+    width: 100%;
+    margin-top: 60px;
 }
 
 

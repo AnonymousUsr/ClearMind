@@ -6,68 +6,33 @@
         <script src="index.js"></script>
     </head>
 
-    <body>
+    <body class="checklist-body">
 
-        <ul id="navbar">
+        <div id="sidenav">
             <a href="home.html" id="logo">Cafe Calm</a>
-
-            <div id="navbar-right">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="checklist.html">Checklist</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
+            <div id="sidenav-down">
+                <a href="home.html">Home</a>
+                <a href="checklist.html">Checklist</a>
+                <a href="resources.html">Resources</a>
+                <a href="about.html">About</a>
             </div>
-        </ul>
+        </div>
 
-        <div class="container" style="flex-direction: column;">
-            <h2 style="margin-top: 5%; flex-direction: column;">Header</h2>
-            <form style="flex-direction: column;">
-                <p>Add your veggies:</p>
-                <p>
-                <input type="checkbox" name="veggies" id="veg1" value="tomato">
-                <label for="veg1">Tomato</label>
-                </p>
-                <p>
-                <input form="myForm" type="checkbox" name="veggies" id="veg2"  value="onion"> 
-                <label for="veg2">Onion</label>
-                </p>
-                <p>
-                <input form="myForm" type="checkbox" name="veggies" id="veg3"  value="lettuce"> 
-                <label for="veg3">Lettuce</label>
-                </p>
-                <p>
-                <input type="checkbox" name="veggies" id="veg4" value="capsicum"> 
-                <label for="veg4">Capsicum</label>
-                </p>
+
+        <div class="menu">
+            <img src="images/menupage.png" id="menuimg">
+            <div id="menu-text">
+                <h2 style="font-size:40px;">MENU</h2>
+                <form>
+                    <p>Add your veggies:</p>
+                    <p><input type="checkbox" name="veggies" id="veg1" value="tomato"><label for="veg1">Tomato</label></p>
+                    <p><input form="myForm" type="checkbox" name="veggies" id="veg2" value="onion"><label for="veg2">Onion</label></p>
+                    <p><input form="myForm" type="checkbox" name="veggies" id="veg3"  value="lettuce"><label for="veg3">Lettuce</label></p>
+                    <p><input type="checkbox" name="veggies" id="veg4" value="capsicum"> <label for="veg4">Capsicum</label></p>
                 </form>
-                
-                <p><input type="submit" value="Submit" onclick="return ValidateSelection();"></p>
                     
-                <script type="text/javascript">  
-                   function ValidateSelection()  
-                   {  
-                       var check_box = document.getElementsByName("veggies");  
-                       var CheckedItems = 0; 
-                       for(var i = 0; i < check_box.length; i++)  
-                       {  
-                           if(check_box[i].checked)  
-                               CheckedItems++;  
-                       }  
-                       if (CheckedItems > 3){  
-                           alert("You did it! Heres to happier days ahead.");  
-                           return false;
-                       } 
-                       else if (CheckedItems > 0) {
-                            alert("Any progress is good progess :)");  
-                           return false;
-                       }  
-                       else if (CheckedItems == 0) {
-                            alert("Some days we just don't feel our best. And that's okay.");  
-                           return false;
-                       }
-                   }  
-                </script>
-                
+                <p><input type="submit" value="Submit" onclick="return ValidateSelection();"></p>
+            </div>
         </div>
 
 
