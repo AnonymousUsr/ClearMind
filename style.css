@@ -5,12 +5,12 @@ body, html{
 }
 
 
-#navbar {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 10px 20px; /*navbar itself*/
-    overflow: hidden;
     background-color: #402617;
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,21 +20,24 @@ body, html{
     text-decoration: none;
     transition: 0.4s;
 }
-#navbar a {
+#homenavbar {
+    background-color: transparent;
+}
+.navbar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 28px 28px; /*height, width of the navbar buttons*/
     text-decoration: none;
+    padding: 28px 28px; /*height, width of the navbar buttons*/
 }
-#navbar #logo {
+.navbar #logo {
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     float:left; 
     color:white; 
-    padding-left:30px;
+    padding-left:10px;
     font-weight: bold;
 }
 #navbar-right {
@@ -42,9 +45,11 @@ body, html{
     font-size: 18px;
     padding-right: 30px;
 }
+
 #navbar-right a:hover, #sidenav-down a:hover {
-    background-color: #865d40;
+    background-color: rgba(134, 93, 64, .6);
 }
+
 
 
 #sidenav {
@@ -73,13 +78,14 @@ body, html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 900px;
-    margin-top: 60px;
+    height: 900px;
+    width: 100%;
+    margin-top: -10%;
 }
 
 #hometitle {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 30%;
     color: white;
     font-family:Verdana, Tahoma, sans-serif;
     font-size: 70px;
