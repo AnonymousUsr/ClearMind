@@ -33,7 +33,7 @@ function ValidateSelection() {
     if(check_box[i].checked)  
       CheckedItems++;  
   }  
-  if (CheckedItems > 3){  
+  if (CheckedItems > 5){  
     alert("You did it! Heres to happier days ahead.");  
     return false;
   } 
