@@ -83,6 +83,16 @@ body, html{
     margin-top: -10%;
 }
 
+.parallaxdiv2 {
+    background-image: url('https://images.unsplash.com/photo-1426260193283-c4daed7c2024?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    margin-top: -10%;
+}
+
 #hometitle {
     text-align: center;
     padding-top: 30%;
@@ -117,6 +127,10 @@ footer {
     background-size: cover;
 }
 
+.resources-body{
+    background-image: url("images/wood.png");
+    background-size: cover;
+}
 
 
 .menu {
