@@ -27,7 +27,7 @@ function scrollFunction() {
 }
 
 function ValidateSelection() {  
-  var check_box = document.getElementsByName("veggies");  
+  var check_box = document.getElementsByName("tips");  
   var CheckedItems = 0; 
   for(var i = 0; i < check_box.length; i++) {  
     if(check_box[i].checked)  
