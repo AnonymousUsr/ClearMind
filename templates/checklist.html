@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="/static/index.js"></script>
+    </head>
+
+    <body class="checklist-body">
+
+        <div id="sidenav">
+            <a href="home.html" id="logo">Cafe Calm</a>
+            <div id="sidenav-down">
+                <a href="home.html">Home</a>
+                <a href="checklist.html" id="active">Checklist</a>
+                <a href="resources.html">Resources</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <img src="/static/images/menupage.png" id="menuimg">
+            <div id="menu-text">
+                <h2>MENU</h2>
+                <form>
+                    <p><input type="checkbox" class="larger" name="tips" id="tip1" value="water"><label for="tip1"> ------------------------ Drink water</label></p>
+                    <p><input form="myForm" class="larger" type="checkbox" name="tips" id="tip2" value="walk"><label for="tip2"> ------- Take a walk for 10 minutes</label></p>
+                    <p><input form="myForm" class="larger" type="checkbox" name="tips" id="tip3"  value="song"><label for="tip3"> -------- Listen to a song you enjoy</label></p>
+                    <p><input type="checkbox" class="larger" name="tips" id="tip4" value="screen"> <label for="tip4"> ----- No screen time for 5 minutes</label></p>
+                    <p><input type="checkbox" class="larger" name="tips" id="tip5" value="good"> <label for="tip5"> --- Write one positive about today</label></p>
+                    <p><input type="checkbox" class="larger" name="tips" id="tip6" value="stretch"> <label for="tip6"> ------------ Stretch for 10 minutes</label></p>
+                </form>
+                    
+                <p><input type="submit" value="Submit" onclick="return ValidateSelection();"></p>
+            </div>
+        </div>
+
+        <button> <a href="/camera-display/"><img src="/static/images/coaster.png" id="coasterimg">Click me</a></button>
+        <div id="pendiv"></div>
+        
+
+
+    </body>
+</html>
