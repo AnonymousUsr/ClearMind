@@ -162,6 +162,15 @@ footer p {
     font-family:Verdana, Tahoma, sans-serif;
     font-size: 18px;
 }
+#sidenav #logo {
+    font-size: 20px;
+    text-decoration: none;
+    color:white; 
+    font-weight: bold;
+}
+#sidenav #active {
+    background-color:rgb(46, 26, 12);
+}
 
 .menu {
     position: relative;
