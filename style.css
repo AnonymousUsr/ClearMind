@@ -77,7 +77,7 @@ body, html{
     margin-top: 60px;
 }
 
-h1 {
+#hometitle {
     text-align: center;
     padding-top: 20%;
     color: white;
@@ -157,24 +157,16 @@ footer {
 
 
 
-.cards {
-    padding: 4rem;
-    background: #fff;
-}
-h1 {
-    text-align: center;
-}
+
 .cards__container {
-    display: flex;
+    padding-top: 8%;
+    background: #fff;
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
-}
-.cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
 }
 .cards__items {
     margin-bottom: 24px;
@@ -198,13 +190,9 @@ h1 {
 }
 .cards__item__pic-wrap {
     position: relative;
-    width: 80%;
-    padding-top: 67%;
+    width: 90%;
+    padding-top: 60%;
     overflow: hidden;
-}
-.fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
 }
 .cards__item__pic-wrap::after {
     content: attr(data-category);
@@ -236,10 +224,8 @@ h1 {
 .cards__item__img:hover {
     transform: scale(1.1);
 }
-.cards__item__info {
-    padding: 20px 30px 30px;
-}
 .cards__item__text {
+    padding: 20px 30px 30px;
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
