@@ -259,3 +259,7 @@ h1 {
         margin-bottom: 2rem;
     }
 }
+input.larger{
+    transform: scale(3);
+    margin: 10px;
+}
