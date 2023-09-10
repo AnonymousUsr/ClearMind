@@ -1,17 +1,48 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+window.onscroll = function() {scrollFunction()};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    
+    const navbarElements = document.getElementsByClassName("navbar");
+    for (let i = 0; i < navbarElements.length; i++) {
+      navbarElements[i].style.padding = "0px 15px";
+    }
+    // document.getElementById("navbar").style.padding = "0px 15px";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    document.getElementById("logo").style.fontSize = "18px";
+    document.getElementById("navbar-right").style.fontSize = "16px";
+    document.getElementById("homenavbar").style.backgroundColor = "#402617";
+  } else {
+
+    const navbarElements = document.getElementsByClassName("navbar");
+    for (let i = 0; i < navbarElements.length; i++) {
+      navbarElements[i].style.padding = "10px 20px";
+    }
+    //document.getElementById("navbar").style.padding = "10px 20px";
+
+    document.getElementById("logo").style.fontSize = "20px";
+    document.getElementById("navbar-right").style.fontSize = "18px";
+    document.getElementById("homenavbar").style.backgroundColor = "transparent";
+  }
+}
+
+function ValidateSelection() {  
+  var check_box = document.getElementsByName("tips");  
+  var CheckedItems = 0; 
+  for(var i = 0; i < check_box.length; i++) {  
+    if(check_box[i].checked)  
+      CheckedItems++;  
+  }  
+  if (CheckedItems > 5){  
+    alert("You did it! Heres to happier days ahead.");  
+    return false;
+  } 
+  else if (CheckedItems > 0) {
+    alert("Any progress is good progess :)");  
+    return false;
+  }  
+  else if (CheckedItems == 0) {
+    alert("Some days we just don't feel our best. And that's okay.");  
+    return false;
+  }
+}  

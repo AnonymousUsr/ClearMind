@@ -1,0 +1,327 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px; /*navbar itself*/
+    background-color: #402617;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    font-family:Verdana, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#homenavbar {
+    background-color: transparent;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 28px 28px; /*height, width of the navbar buttons*/
+}
+.navbar #logo {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    float:left; 
+    color:white; 
+    padding-left:10px;
+    font-weight: bold;
+}
+#navbar-right {
+    float: right; /*puts nav items on right side*/
+    font-size: 18px;
+    padding-right: 30px;
+}
+
+#navbar-right a:hover, #sidenav-down a:hover {
+    background-color: rgba(134, 93, 64, .6);
+}
+
+
+.parallaxdiv {
+    background-image: url('https://media.istockphoto.com/id/1428737062/photo/empty-wooden-table-top-with-lights-bokeh-on-blur-restaurant-background.webp?b=1&s=170667a&w=0&k=20&c=bmQyPVwhLAB_FN9glJrREyPxzmIQPv5TOFcqcXHy2pw=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    margin-top: -10%;
+}
+
+.parallaxdiv2 {
+    background-image: url('https://images.unsplash.com/photo-1426260193283-c4daed7c2024?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    margin-top: -10%;
+}
+
+#hometitle {
+    text-align: center;
+    padding-top: 28%;
+    color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 90px;
+}
+h3 {
+    text-align: center;
+    color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+
+.container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.container h2 {
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.container p {
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.container a {
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#home-contain-check {
+    background-color: #ecdfce;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+footer {
+    color: white;
+    background-color: #402617;
+    padding: 5px;   
+    height: 150px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    position: relative;
+    float: left;
+    padding: 15px;
+}
+footer p {
+    position: relative;
+    padding: 15px;
+}
+
+
+.checklist-body {
+    background-image: url("images/wood.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.resources-body{
+    background-image: url("images/wood.png");
+    background-size: cover;
+}
+
+
+/*checklist.html*/
+#sidenav {
+    list-style-type: none;
+    height: 100%;
+    width: 15%;
+    background-color: #402617;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+#sidenav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 24px;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+}
+#sidenav #logo {
+    font-size: 20px;
+    text-decoration: none;
+    color:white; 
+    font-weight: bold;
+}
+#sidenav #active {
+    background-color:rgb(46, 26, 12);
+}
+
+.menu {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+#menu-text {
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+#menuimg {
+    width: 100%;
+    margin-top: 60px;
+}
+#coasterimg {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+#pendiv {
+    transform: rotate(90deg);
+    background-image: url(images/pen.png);
+    width: 900px;
+    height: 130px;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    bottom: -5%;
+    right: -18%;
+    overflow: hidden;
+}
+/*end of checklist.html*/
+
+
+
+.cards__container {
+    padding-top: 8%;
+    background: #fff;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.cards__items {
+    margin-bottom: 24px;
+}
+.cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+.cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.cards__item__pic-wrap {
+    position: relative;
+    width: 90%;
+    padding-top: 60%;
+    overflow: hidden;
+}
+.cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+}
+.cards__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+.cards__item__img:hover {
+    transform: scale(1.1);
+}
+.cards__item__text {
+    padding: 20px 30px 30px;
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+}
+@media only screen and (min-width: 1200px) {
+    .content__blog__container {
+        width: 84%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cards__items {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .cards__item {
+        margin-bottom: 2rem;
+    }
+}
+input.larger{
+    transform: scale(3);
+    margin: 10px;
+}
